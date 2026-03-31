@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "expectedOutcome": "success",
+      "expectedAssertion": "/inventory.html"
+    },
+    {
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "expectedOutcome": "error",
+      "expectedAssertion": "Epic sadface: Sorry, this user has been locked out."
+    },
+    {
+      "username": "problem_user",
+      "password": "secret_sauce",
+      "expectedOutcome": "success",
+      "expectedAssertion": "/inventory.html"
+    },
+    {
+      "username": "performance_glitch_user",
+      "password": "secret_sauce",
+      "expectedOutcome": "success",
+      "expectedAssertion": "/inventory.html"
+    },
+    {
+      "username": "error_user",
+      "password": "secret_sauce",
+      "expectedOutcome": "success",
+      "expectedAssertion": "/inventory.html"
+    },
+    {
+      "username": "visual_user",
+      "password": "secret_sauce",
+      "expectedOutcome": "success",
+      "expectedAssertion": "/inventory.html"
+    }
+  ],
+  "cart": {
+    "addRandomItem": true,
+    "removeInCart": false,
+    "checkoutInfo": {
+      "firstName": "Taro",
+      "lastName": "Yamada",
+      "zip": "100-0001"
+    },
+    "checkoutAction": "finish"
+  },
+  "inventory": {
+    "testSort": true,
+    "sortMethod": "za",
+    "targetProduct": {
+      "name": "Sauce Labs Backpack",
+      "description": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+      "price": "$29.99"
+    }
+  }
+}
