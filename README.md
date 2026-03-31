@@ -4,6 +4,16 @@ Automated end-to-end tests for [saucedemo.com](https://www.saucedemo.com) using 
 
 ---
 
+## Note on Negative Test Cases
+
+Negative test cases are intentionally limited to the login page.
+
+SauceDemo officially documents the behavior of all 6 test users, including expected error messages for failure scenarios. This makes login a reliable target for negative testing.
+
+For other pages (inventory, cart, checkout), the error conditions and edge case behaviors are not officially documented. Writing negative tests against undocumented behavior risks testing implementation bugs rather than intended functionality, and would result in brittle tests tied to the current state of the demo site. For this reason, negative coverage is scoped to where the expected behavior is explicitly known.
+
+---
+
 ## Project Structure
 
 ```
